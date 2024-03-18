@@ -1,35 +1,58 @@
 <!DOCTYPE html>
-
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Pagina de Login - CINECLUBE</title>
-  </head>
-
-  <body>
-    <header>
-      <h1>Area de Login - CiNECLUBE</h1>
-    </header>
-
-    <main>
-      <form action="dashboard.html" method="post">
-        <label for="username">Usuário:</label><br />
-
-        <input type="text" id="username" name="username" /><br />
-
-        <label for="password">Senha:</label><br />
-
-        <input type="password" id="password" name="password" /><br /><br />
-
-        <input type="submit" value="Login" />
-      </form>
-    </main>
-
-    <footer>
-      <p>&copy; 2024 CINECLUBE.</p>
-    </footer>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(45deg, #103353, #0875b6);
+        }
+        .Tela-LOGIN{
+            background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 80px;
+        border-radius: 15px;
+        color: whitesmoke;
+        }
+        input{
+            padding: 15px;
+            border:none;
+            outline: none;
+            font-size: 15px;
+        }
+        button{
+            background-color: dodgerblue;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: whitesmoke;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: skyblue;
+        }
+        
+    
+        
+    </style>
+</head>
+<body> <div class="Tela-LOGIN">
+    <h1>LOGIN</h1>
+    <input type="text" placeholder="Nome">
+    <br>
+    <br>
+    <input type="password" placeholder="Senha">
+    <br>
+    <br>
+    <button>Entrar</button>
+   
+</div>
+</body>
 </html>
