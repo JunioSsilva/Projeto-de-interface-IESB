@@ -1,0 +1,78 @@
+
+* {margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+}
+body{ background-image: linear-gradient(45deg, #1e2630, #212E3F)
+}
+section{
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.sobre-container section{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+.cabeçalho{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   background-color: #1e2630;
+   color: rgb(122, 115, 73);    
+   font-size: 1.6rem;
+   background-color: black;
+   padding: 3rem 2rem ;
+   margin: 0 auto;
+}
+.nav-bar a{
+    margin: 0 1rem;
+    font-size: 1.7rem;
+    color: rgb(122, 115, 73);
+ 
+}
+.nav-bar:hover{
+    color: #212E3F;
+    font-size: 2rem;
+}
+.conteudo{
+    max-width: 40rem;
+}
+.conteudo h3{
+    align-items: center;
+    color: rgb(122, 115, 73);
+    font-size: 4rem;
+    gap: 0.9rem;
+}
+.conteudo p{
+    align-items: center;
+    color: rgb(122, 115, 73);
+    font-size: 2rem;
+    font-weight: 1;
+    line-height: 1.5;
+    padding: 1rem 0;
+    gap: 2rem;
+}
+.title{
+    font-size: 5rem;
+    text-align: center;
+    color: rgb(122, 115, 73);
+}
+.encontros .meet{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.9rem;
+    color: rgb(122, 115, 73);
+}
+.content h4{
+    font-size: 5rem;
+    align-items: center;
+    padding: 0rem;
+
+}
