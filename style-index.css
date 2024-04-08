@@ -35,7 +35,7 @@ button:hover{
     color: #A9806F;
 }
 
-/* estilo do cabeçalho */
+
 header{
     padding: 20px 5%;
 }
@@ -68,7 +68,7 @@ header nav ul li{
 header .btn-login button:hover{
     box-shadow: 0px 0px 25px#868686;
 }
-/* estilo da página Inicial */
+
 section .pag-inicial{
     padding: 40px 4%;
 }
@@ -103,7 +103,6 @@ section.pag-inicial .flex{
 .pag-inicial .img-inicial{
     padding: 40px 8%;
 }
-/* estilo da página About */
 .title{
     font-size: 2.5rem;
     color: #A9806F;
@@ -133,7 +132,6 @@ section.pag-inicial .flex{
     align-items: center;
     padding: 10px auto;
 }
-/* estilo da página MEET */
 .title-meet{
     padding-top: 50px;
     font-size: 2.5rem;
