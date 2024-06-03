@@ -1,7 +1,15 @@
-body{
+  * {
+    margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        text-decoration: none;
+        text-transform: capitalize;
+  }
+  body{
     text-align: center;
     font-size: 18px;
-    background: #FFFFFF url("pexels-donald-tong-66134.jpg") no-repeat right top fixed;
+    background: #FFFFFF url("img/pexels-donald-tong-66134.jpg") no-repeat right top fixed;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -19,7 +27,8 @@ main{
     background: transparent;
     border: 2px solid #9b9b9b;
     backdrop-filter: blur(20px);
-    padding: 30px, 40px;
+    padding: 30px;
+    padding-bottom: 5px;
     border-radius: 15px;
     position: absolute;
     top: 50%;
@@ -61,6 +70,7 @@ button:hover{
 a{
     font-family: "Poppins", sans-serif;
     color: white;
-
+    outline: none;
 }
+
 
