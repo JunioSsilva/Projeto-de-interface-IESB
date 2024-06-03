@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>CINECLUBE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        :root {
+            --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-family: "Raleway", sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        .interface {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        .flex {
+            display: flex;
+        }
+        button {
+            padding: 10px 40px;
+            font-size: 1.0rem;
+            font-weight: 600;
+            background-color: white;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: .2s;
+        }
+        button:hover {
+            color: #A9806F;
+        }
+        header {
+            padding: 20px 5%;
+        }
+        header > .interface {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 1.0rem;
+            padding-bottom: 1.0rem;
+            font-family: "Raleway", sans-serif;
+            border-bottom: var(--border);
+        }
+        header a {
+            display: flex;
+            justify-items: flex-end;
+            margin: 0 1rem;
+            font-size: 1.0rem;
+            color: #fff;
+            display: inline-block;
+            transition: .2s;
+        }
+        header a:hover {
+            color: #A9806F;
+            transform: scale(1.05);
+        }
+        header nav ul li {
+            display: inline-block;
+            padding: 0 20px;
+        }
+        header .btn-login button:hover {
+            box-shadow: 0px 0px 25px #868686;
+        }
+        .navbar {
+            background-color: #000 !important;
+            border-bottom: var(--border);
+        }
+        .navbar-nav .nav-link {
+            color: #fff !important;
+            transition: .2s;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #A9806F !important;
+        }
+        section .pag-inicial {
+            padding: 40px 4%;
+        }
+        section.pag-inicial .flex {
+            align-items: center;
+            justify-content: center;
+            gap: 90px;
+            min-height: 100vh;
+        }
+        .pag-inicial .incial-site h1 {
+            color: #A9806F;
+            font-size: 50px;
+            align-items: 90px;
+            text-align-last: center;
+        }
+        .pag-inicial .incial-site h2 {
+            color: white;
+            font-size: 65px;
+            height: 400;
+            text-align-last: center;
+        }
+        .pag-inicial .incial-site h2 span {
+            color: #A9806F;
+        }
+        .pag-inicial .incial-site p {
+            color: #A9806F;
+            margin: 25px 50px;
+            font-size: 20px;
+            text-wrap: balance;
+            text-align: justify;
+        }
+        .pag-inicial .img-inicial {
+            padding: 40px 8%;
+        }
+        .title {
+            font-size: 2.5rem;
+            color: #A9806F;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .title span {
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .about .conteudo {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 0.1rem;
+            padding: 20px 5%;
+        }
+        .about .content {
+            color: #A9806F;
+            align-items: center;
+            margin: 50px 100px;
+            font-size: 20px;
+            text-align: justify;
+        }
+        .about .sobre-IMG {
+            display: flex;
+            align-items: center;
+            padding: 10px auto;
+        }
+        .title-meet {
+            padding: 10px auto;
+            font-size: 2.5rem;
+            color: #A9806F;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .Encontros .conteudo {
+            padding: 20px 5%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 0.1rem;
+        }
+        .Encontros .content {
+            color: #A9806F;
+            margin: 30px 100px;
+            font-size: 20px;
+            text-align: justify;
+        }
+        .title-lugar {
+            font-size: 2.5rem;
+            color: #A9806F;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 40px;
+        }
+        .LugarDeEncontro .conteudo {
+            padding: 20px 5%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: 1rem;
+            flex-direction: column;
+        }
+        .LugarDeEncontro .content {
+            color: #A9806F;
+            margin: 30px 100px;
+            font-size: 20px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png.png" width="60" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#meet">Encontros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#lugar">Lugares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Tela-de-Login.HTML" class="btn btn-primary">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="pag-inicial text-center my-5">
+            <div class="container">
+                <div class="flex">
+                    <div class="incial-site">
+                        <h1>Bem-Vindo <br>ao</h1>
+                        <h2>CineClube<span>!</span></h2>
+                        <p>Descubra o fascínio do cinema conosco. Junte-se à nossa comunidade apaixonada para assistir, discutir e se encantar com filmes. Embarque nessa jornada cinematográfica conosco!</p>
+                    </div>
+                    <div class="img-inicial">
+                        <img src="img/paginaInicial.PNG.png" alt="" class="img-fluid" width="1000" height="1000">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sobre" class="about my-5">
+            <div class="container">
+                <h3 class="title">SOBRE <span>NÓS</span></h3>
+                <div class="conteudo mt-4">
+                    <div class="sobre-IMG">
+                        <img src="img/paginaSobre.PNG.png" alt="IMG" class="img-fluid" width="1000" height="1000">
+                    </div>
+                    <div class="content">
+                        <p>Nós somos um grupo apaixonado por filmes, nos reunindo para assistir e discutir sobre cinema. Desde clássicos até lançamentos, oferecemos uma experiência única. Junte-se a nós para explorar novos horizontes cinematográficos e participar de discussões animadas!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="meet" class="Encontros my-5">
+            <div class="container">
+                <h3 class="title-meet">ENCON<span>TROS</span></h3>
+                <div class="conteudo mt-4">
+                    <div class="Cont-IMG">
+                        <img src="img/paginaEnco.PNG.png" alt="IMG" class="img-fluid" width="1000" height="1000">
+                    </div>
+                    <div class="content">
+                        <p>Nossos encontros oferecem uma imersão no mundo do cinema, com uma diversidade de filmes, desde clássicos até produções contemporâneas. Cada sessão é planejada para debates instigantes e perspectivas diversas, proporcionando aos membros uma jornada cinematográfica única e memorável.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="lugar" class="LugarDeEncontro my-5">
+            <div class="container">
+                <h3 class="title-lugar">LUGAR DE <span>ENCONTRO</span></h3>
+                <div class="conteudo mt-4">
+                    <div class="place-img">
+                        <img src="img/iesb.jpg" alt="IESB SUL" class="img-fluid" width="500" height="500">
+                    </div>
+                    <div class="content">
+                        <p>Encontros do CineClube: Toda Semana no IESB SUL - Venha assistir, discutir e compartilhar sua paixão pelo cinema.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center py-4">
+        <p>&copy; 2024 CINECLUBE.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
